@@ -1,0 +1,118 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+		width: 999px;
+		height: 100px;
+		background: white;
+		margin: 0 auto;
+	}
+	.header .logo{
+		width: 250px;
+		height: 30px;
+		/*background: greenyellow;*/
+		float: left;
+		margin-left: 20px;
+		margin-top: 39px;
+	}
+	.header .search{
+		width: 230px;
+		height: 30px;
+		/*background: white;*/
+		border: 1px solid #e5e5e5;
+		float: right;
+		margin-right: 18px;
+		margin-top: 39px;
+	}
+	.header .search input[type=text]{
+		width: 197px;
+		height: 30px;
+		background: #f1f1f1;
+		border: none;
+		float: left;
+		padding-left: 15px;
+		box-sizing: border-box;
+	}
+	.header .search input[type=submit]{
+		width: 33px;
+		height: 30px;
+		background: #f1f1f1 url(../img/search.png) no-repeat center center;
+		border: none;
+		float: right;
+	}
+	.nav{
+		width: 999px;
+		height: 60px;
+		background: black;
+		margin: 0 auto;
+	}
+	.nav ul{
+		width: 999px;
+		height: 60px;
+		padding-left: 27px;
+		box-sizing: border-box;
+	}
+	.nav ul li{
+		list-style: none;
+		float: left;
+		width: 119px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		border-right: 1px solid #494949;
+		box-sizing:border-box;
+	}
+	.nav ul li:last-child{
+		border-right: none;
+	}
+	.nav ul li a{
+		color: white;
+		text-decoration: none;
+	}
+	.banner{
+		width: 999px;
+		height: 465px;
+		margin: 0 auto;
+	}
+	.text{
+		width: 999px;
+		height: 243px;
+		margin: 0 auto;
+	}
+	.he{
+		float: left;
+		width: 460px;
+		height: 243px;
+		margin-left: 20px;
+	}
+	div h3{
+				font: 18px "microsoft yahei";
+				margin-top: 37px;
+				margin-bottom: 24px;
+			}
+			ul li{
+				font: 12px "microsoft yahei";
+				color: #242424;
+				padding-top: 6px;
+				padding-bottom: 6px;
+				padding-left: 20px;
+			}
+			.riqi{
+				/*width: 80px;*/
+				/*height: 243px;*/
+				margin-top: 83px;
+				float: left;
+			}
+			.riqi ul li{
+				font: 8px "microsoft yahei";
+				width: 80px;
+				background: #fefefe;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.riqi ul li a{
+				text-decoration: none;
+				color: #9D9D9D;
+			}
