@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{
+				list-style: none;
+			}
+			.box{
+				margin: 0 auto;
+				width: 590px;
+				height:320px ;
+			}
+			.box1{
+				text-align: center;
+				font-size: 30px;
+				width: 270px;
+				height: 320px;
+				float: left;
+				margin: 0 auto;
+				border: 4px solid green;
+				position: relative;
+			}
+			.bbox1{
+				text-align: center;
+				font-size: 30px;
+				width: 270px;
+				height: 320px;
+				float: right;
+				margin: 0 auto;
+				border: 4px solid red;
+				position: relative;
+			}
+			.bimg img{
+				width:270px ;
+				height: 250px;
+				margin-left: -40px;
+			}
+			.bimg{
+				width: 270px;
+				height: 250px;
+				overflow: hidden;
+				margin-left: -20px;
+			}
+			.box2{
+				
+				margin: 0 auto;
+				width: 330px;
+				height: 130px;
+			}
+			.box2 img{
+				margin-top: 10px;
+				width: 100px;
+				height: 130px;
+			}
+			.box3{
+				width: 600px;
+				height: 120px;
+				border: 3px solid blue;
+				margin: 0 auto;
+				margin-top: 50px;
+				overflow: hidden;
+				position: relative;
+			}
+			.bb{
+				width: 580px;
+				height: 100px;
+				border: 6px solid blue;
+				margin: 0 auto;
+				margin-top: 3.5px;
+				font-size: 60px;
+				color: blue;
+			}
+			p{
+				text-align: center;
+				margin-top: 20px;
+			}
+		</style>
+		<script src="js/jquery-3.4.1.min.js">
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1">
+				电脑
+				<ul class="bimg">
+					<li id="img1"><img src="img/0.png"/><>
+					<li id="img2"><img src="img/2.png"/><>
+					<li id="img3"><img src="img/1.png"/><>
+				</ul>
+			</div>
+			<div class="bbox1">
+				玩家
+				<ul class="bimg">
+					<li id="img4"><img src="img/0.png"/><>
+					<li id="img5"><img src="img/2.png"/><>
+					<li id="img6"><img src="img/1.png"/><>
+				</ul>
+			</div>
+		</div>
+		<div class="box2">
+			<img id="mg1" src="img/b0.png"/>
+			<img id="mg2" src="img/b2.png"/>
+			<img id="mg3" src="img/b1.png"/>
+		</div>
+	<div class="box3">
+				<div class="bb">
+					<p id="k">平手</p>
+					<p id="k1">电脑赢</p>
+					<p id="k2">你赢了</p>
+				</div>
+			</div>
+			<script >
+				$(function(){
+					$("#mg1").on("click",function(){
+						$("#img4").show();
+						$("#img2").show();
+						$("#img3").hide();
+						$("#img1").hide();
+							$("#k").hide();
+								$("#k1").hide();
+									$("#k2").show();
+					});
+				});
+				$(function(){
+					$("#mg2").on("click",function(){
+					$("#img4").hide();
+						$("#img5").show();
+							$("#img1").show();
+								$("#img2").hide();
+									$("#img3").hide();
+									$("#k1").show();
+									$("#k2").hide();
+									$("#k").hide();
+					});
+				});
+				$(function(){
+					$("#mg3").on("click",function(){
+					$("#img6").show();
+						$("#img5").hide();
+							$("#img1").hide();	$("#img2").hide();
+								$("#img3").show();
+								$("#k").show();
+					});
+				});
+			</script>
+	</body>
+<ml>
